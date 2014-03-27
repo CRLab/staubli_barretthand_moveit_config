@@ -1,0 +1,71 @@
+joint_limits:
+  joint_5:
+    has_velocity_limits: true
+    max_velocity: 5.585053606
+    has_acceleration_limits: false
+    max_acceleration: 0
+  joint_2:
+    has_velocity_limits: true
+    max_velocity: 5.009094953
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_1/dist_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_3/med_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  joint_3:
+    has_velocity_limits: true
+    max_velocity: 5.567600314
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_2/prox_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_1/prox_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  joint_6:
+    has_velocity_limits: true
+    max_velocity: 12.217304764
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_2/dist_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  joint_1:
+    has_velocity_limits: true
+    max_velocity: 5.009094953
+    has_acceleration_limits: false
+    max_acceleration: 0
+  joint_4:
+    has_velocity_limits: true
+    max_velocity: 7.155849933
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_1/med_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_3/dist_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wam/bhand/finger_2/med_joint:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: false
+    max_acceleration: 0
