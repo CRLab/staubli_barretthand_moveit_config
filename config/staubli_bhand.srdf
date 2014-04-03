@@ -23,6 +23,15 @@
         <link name="wam/bhand/finger_3/med_link" />
         <link name="wam/bhand/finger_3/dist_link" />
     </group>
+
+    <group_state name="home" group="StaubliArm">
+      <joint name="joint_1" value="0" />
+      <joint name="joint_2" value="0" />
+      <joint name="joint_3" value="0" />
+      <joint name="joint_4" value="0" />
+      <joint name="joint_5" value="0" />
+      <joint name="joint_6" value="0" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="BarrettHandEE" parent_link="staubli_rx60l_link7" group="BarrettHand" parent_group="StaubliArm" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
