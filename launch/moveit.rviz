@@ -5,8 +5,9 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
+        - /MarkerArray1
       Splitter Ratio: 0.74256
-    Tree Height: 459
+    Tree Height: 448
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -345,11 +346,11 @@ Visualization Manager:
           Value: true
         camera_rgb_optical_frame:
           Value: true
-        garnier_shampoo_bottle:
+        garnier_shampoo_bottle_0:
+          Value: true
+        garnier_shampoo_bottle_1:
           Value: true
         gillette_shaving_gel:
-          Value: true
-        object:
           Value: true
         staubli_rx60l_link1:
           Value: true
@@ -403,11 +404,11 @@ Visualization Manager:
             camera_rgb_optical_frame:
               all:
                 {}
-              garnier_shampoo_bottle:
+              garnier_shampoo_bottle_0:
+                {}
+              garnier_shampoo_bottle_1:
                 {}
               gillette_shaving_gel:
-                {}
-              object:
                 {}
               world:
                 arm_base:
@@ -440,6 +441,14 @@ Visualization Manager:
                                   {}
       Update Interval: 0
       Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /move_group/display_grasp_markers
+      Name: MarkerArray
+      Namespaces:
+        moveit_grasps:stage_1: true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -455,17 +464,17 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.86891
+      Distance: 3.49586
       Focal Point:
         X: 0.113567
         Y: 0.10592
         Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.589796
+      Pitch: -0.310205
       Target Frame: staubli_rx60l_link1
       Value: XYOrbit (rviz)
-      Yaw: 5.05493
+      Yaw: 2.95495
     Saved: ~
 Window Geometry:
   Displays:
@@ -477,9 +486,9 @@ Window Geometry:
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003dafc0200000005fb000000100044006900730070006c006100790073010000002800000260000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000028e000001740000017400ffffff00000497000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003dafc0200000005fb000000100044006900730070006c006100790073010000002800000255000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002830000017f0000017400ffffff00000497000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1855
-  X: 57
-  Y: -4
+  X: 58
+  Y: 24
