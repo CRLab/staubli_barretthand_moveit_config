@@ -11,12 +11,12 @@ joint_limits:
     max_velocity: 5.009094953
     has_acceleration_limits: false
     max_acceleration: 0
-  wam/bhand/finger_1/dist_joint:
+  bh_j13_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false
     max_acceleration: 0
-  wam/bhand/finger_3/med_joint:
+  bh_j32_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false
@@ -26,24 +26,24 @@ joint_limits:
     max_velocity: 5.567600314
     has_acceleration_limits: false
     max_acceleration: 0
-  wam/bhand/finger_2/prox_joint:
+  bh_j21_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false
     max_acceleration: 0
-  wam/bhand/finger_1/prox_joint:
+  bh_j11_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false
     max_acceleration: 0
   joint_6:
     max_position: 6
-    min_position: -2.428
+    min_position: -6.428
     has_velocity_limits: true
     max_velocity: 12.217304764
     has_acceleration_limits: false
     max_acceleration: 0
-  wam/bhand/finger_2/dist_joint:
+  bh_j23_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false
@@ -58,17 +58,17 @@ joint_limits:
     max_velocity: 7.155849933
     has_acceleration_limits: false
     max_acceleration: 0
-  wam/bhand/finger_1/med_joint:
+  bh_j12_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false
     max_acceleration: 0
-  wam/bhand/finger_3/dist_joint:
+  bh_j33_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false
-    max_acceleration: 0
-  wam/bhand/finger_2/med_joint:
+    max_acceleration: 0 
+  bh_j22_joint:
     has_velocity_limits: true
     max_velocity: 5
     has_acceleration_limits: false

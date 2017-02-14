@@ -5,9 +5,10 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
+        - /MotionPlanning1/Planning Request1
         - /MarkerArray1
       Splitter Ratio: 0.74256
-    Tree Height: 448
+    Tree Height: 360
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -38,13 +39,26 @@ Visualization Manager:
       Value: true
     - Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
+      Move Group Namespace: ""
       MoveIt_Goal_Tolerance: 0
+      MoveIt_Planning_Attempts: 10
       MoveIt_Planning_Time: 5
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
       Name: MotionPlanning
       Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
         Links:
           All Links Enabled: true
           Expand Joint Details: false
@@ -151,6 +165,7 @@ Visualization Manager:
             Value: true
         Loop Animation: true
         Robot Alpha: 0.5
+        Robot Color: 150; 50; 150
         Show Robot Collision: false
         Show Robot Visual: true
         Show Trail: false
@@ -169,7 +184,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: BarrettHand
+        Planning Group: StaubliArm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -320,6 +335,7 @@ Visualization Manager:
       Size (m): 0.01
       Style: Flat Squares
       Topic: ""
+      Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -328,29 +344,9 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        all:
-          Value: true
         approach_tran:
           Value: true
-        arm_base:
-          Value: true
         barrett_mount_link:
-          Value: true
-        camera_depth_frame:
-          Value: true
-        camera_depth_optical_frame:
-          Value: true
-        camera_link:
-          Value: true
-        camera_rgb_frame:
-          Value: true
-        camera_rgb_optical_frame:
-          Value: true
-        garnier_shampoo_bottle_0:
-          Value: true
-        garnier_shampoo_bottle_1:
-          Value: true
-        gillette_shaving_gel:
           Value: true
         staubli_rx60l_link1:
           Value: true
@@ -370,24 +366,6 @@ Visualization Manager:
           Value: true
         wam/bhand/bhand_palm_link:
           Value: true
-        wam/bhand/finger_1/dist_link:
-          Value: true
-        wam/bhand/finger_1/med_link:
-          Value: true
-        wam/bhand/finger_1/prox_link:
-          Value: true
-        wam/bhand/finger_2/dist_link:
-          Value: true
-        wam/bhand/finger_2/med_link:
-          Value: true
-        wam/bhand/finger_2/prox_link:
-          Value: true
-        wam/bhand/finger_3/dist_link:
-          Value: true
-        wam/bhand/finger_3/med_link:
-          Value: true
-        world:
-          Value: true
         wrist_load_cell:
           Value: true
       Marker Scale: 1
@@ -396,49 +374,23 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        camera_link:
-          camera_depth_frame:
-            camera_depth_optical_frame:
-              {}
-          camera_rgb_frame:
-            camera_rgb_optical_frame:
-              all:
-                {}
-              garnier_shampoo_bottle_0:
-                {}
-              garnier_shampoo_bottle_1:
-                {}
-              gillette_shaving_gel:
-                {}
-              world:
-                arm_base:
-                  staubli_rx60l_link1:
-                    staubli_rx60l_link2:
-                      staubli_rx60l_link3:
-                        staubli_rx60l_link4:
-                          staubli_rx60l_link5:
-                            staubli_rx60l_link6:
-                              staubli_rx60l_link7:
-                                approach_tran:
-                                  {}
-                                barrett_mount_link:
-                                  {}
-                                staubli_rx60l_tool0:
-                                  {}
-                                wam/bhand/bhand_palm_link:
-                                  wam/bhand/finger_1/prox_link:
-                                    wam/bhand/finger_1/med_link:
-                                      wam/bhand/finger_1/dist_link:
-                                        {}
-                                  wam/bhand/finger_2/prox_link:
-                                    wam/bhand/finger_2/med_link:
-                                      wam/bhand/finger_2/dist_link:
-                                        {}
-                                  wam/bhand/finger_3/med_link:
-                                    wam/bhand/finger_3/dist_link:
-                                      {}
-                                wrist_load_cell:
-                                  {}
+        staubli_rx60l_link1:
+          staubli_rx60l_link2:
+            staubli_rx60l_link3:
+              staubli_rx60l_link4:
+                staubli_rx60l_link5:
+                  staubli_rx60l_link6:
+                    staubli_rx60l_link7:
+                      approach_tran:
+                        {}
+                      barrett_mount_link:
+                        {}
+                      staubli_rx60l_tool0:
+                        {}
+                      wam/bhand/bhand_palm_link:
+                        {}
+                      wrist_load_cell:
+                        {}
       Update Interval: 0
       Value: true
     - Class: rviz/MarkerArray
@@ -446,7 +398,7 @@ Visualization Manager:
       Marker Topic: /move_group/display_grasp_markers
       Name: MarkerArray
       Namespaces:
-        moveit_grasps:stage_1: true
+        {}
       Queue Size: 100
       Value: true
   Enabled: true
@@ -465,6 +417,11 @@ Visualization Manager:
     Current:
       Class: rviz/XYOrbit
       Distance: 3.49586
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
       Focal Point:
         X: 0.113567
         Y: 0.10592
@@ -486,9 +443,9 @@ Window Geometry:
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003dafc0200000005fb000000100044006900730070006c006100790073010000002800000255000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002830000017f0000017400ffffff00000497000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003dafc0200000005fb000000100044006900730070006c0061007900730100000028000001fd000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000022b000001d7000001cc00ffffff00000488000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1855
-  X: 58
+  X: 65
   Y: 24

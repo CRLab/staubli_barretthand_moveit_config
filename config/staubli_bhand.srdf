@@ -13,15 +13,15 @@
       <chain base_link="staubli_rx60l_link1"  tip_link="staubli_rx60l_link7" /> 
     </group>
     <group name="BarrettHand">
-      <link name="wam/bhand/bhand_palm_link" />
-        <link name="wam/bhand/finger_1/prox_link" />
-        <link name="wam/bhand/finger_1/med_link" />
-        <link name="wam/bhand/finger_1/dist_link" />
-        <link name="wam/bhand/finger_2/prox_link" />
-        <link name="wam/bhand/finger_2/med_link" />
-        <link name="wam/bhand/finger_2/dist_link" />
-        <link name="wam/bhand/finger_3/med_link" />
-        <link name="wam/bhand/finger_3/dist_link" />
+      <link name="bh_base_link" />
+        <link name="bh_finger_11_link" />
+        <link name="bh_finger_12_link" />
+        <link name="bh_finger_13_link" />
+        <link name="bh_finger_21_link" />
+        <link name="bh_finger_22_link" />
+        <link name="bh_finger_23_link" />
+        <link name="bh_finger_32_link" />
+        <link name="bh_finger_33_link" />
     </group>
 
     <group_state name="home" group="StaubliArm">
@@ -40,15 +40,15 @@
     <disable_collisions link1="barrett_mount_link" link2="staubli_rx60l_link5" reason="Default" />
     <disable_collisions link1="barrett_mount_link" link2="staubli_rx60l_link6" reason="Default" />
     <disable_collisions link1="barrett_mount_link" link2="staubli_rx60l_link7" reason="Adjacent" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/bhand_palm_link" reason="Default" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_1/dist_link" reason="Never" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_1/med_link" reason="Never" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_1/prox_link" reason="Always" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_2/dist_link" reason="Never" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_2/prox_link" reason="Default" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="barrett_mount_link" link2="wam/bhand/finger_3/med_link" reason="Never" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_base_link" reason="Default" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_13_link" reason="Never" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_12_link" reason="Never" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_11_link" reason="Always" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_23_link" reason="Never" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_21_link" reason="Default" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_32_link" reason="Never" />
     <disable_collisions link1="barrett_mount_link" link2="wrist_load_cell" reason="Default" />
     <disable_collisions link1="staubli_rx60l_link1" link2="staubli_rx60l_link2" reason="Adjacent" />
     <disable_collisions link1="staubli_rx60l_link1" link2="staubli_rx60l_link6" reason="Never" />
@@ -63,88 +63,91 @@
     <disable_collisions link1="staubli_rx60l_link3" link2="staubli_rx60l_link5" reason="Default" />
     <disable_collisions link1="staubli_rx60l_link3" link2="staubli_rx60l_link6" reason="Default" />
     <disable_collisions link1="staubli_rx60l_link3" link2="staubli_rx60l_link7" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/bhand_palm_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_1/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_1/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_1/prox_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_2/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_2/prox_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link3" link2="wam/bhand/finger_3/med_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_base_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_13_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_12_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_11_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_23_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_21_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link3" link2="bh_finger_32_link" reason="Never" />
     <disable_collisions link1="staubli_rx60l_link3" link2="wrist_load_cell" reason="Never" />
     <disable_collisions link1="staubli_rx60l_link4" link2="staubli_rx60l_link5" reason="Adjacent" />
     <disable_collisions link1="staubli_rx60l_link4" link2="staubli_rx60l_link6" reason="Default" />
     <disable_collisions link1="staubli_rx60l_link4" link2="staubli_rx60l_link7" reason="Default" />
-    <disable_collisions link1="staubli_rx60l_link4" link2="wam/bhand/bhand_palm_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link4" link2="wam/bhand/finger_1/prox_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link4" link2="wam/bhand/finger_2/prox_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link4" link2="bh_base_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link4" link2="bh_finger_11_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link4" link2="bh_finger_21_link" reason="Never" />
     <disable_collisions link1="staubli_rx60l_link4" link2="wrist_load_cell" reason="Never" />
     <disable_collisions link1="staubli_rx60l_link5" link2="staubli_rx60l_link6" reason="Adjacent" />
     <disable_collisions link1="staubli_rx60l_link5" link2="staubli_rx60l_link7" reason="Default" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/bhand_palm_link" reason="Default" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_1/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_1/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_1/prox_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_2/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_2/prox_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link5" link2="wam/bhand/finger_3/med_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_base_link" reason="Default" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_13_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_12_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_11_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_23_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_21_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link5" link2="bh_finger_32_link" reason="Never" />
     <disable_collisions link1="staubli_rx60l_link5" link2="wrist_load_cell" reason="Default" />
     <disable_collisions link1="staubli_rx60l_link6" link2="staubli_rx60l_link7" reason="Adjacent" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/bhand_palm_link" reason="Default" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_1/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_1/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_1/prox_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_2/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_2/prox_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link6" link2="wam/bhand/finger_3/med_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_base_link" reason="Default" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_13_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_12_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_11_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_23_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_21_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link6" link2="bh_finger_32_link" reason="Never" />
     <disable_collisions link1="staubli_rx60l_link6" link2="wrist_load_cell" reason="Default" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/bhand_palm_link" reason="Adjacent" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_1/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_1/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_1/prox_link" reason="Always" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_2/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_2/prox_link" reason="Default" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="staubli_rx60l_link7" link2="wam/bhand/finger_3/med_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_base_link" reason="Adjacent" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_13_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_12_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_11_link" reason="Always" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_23_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_21_link" reason="Default" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="staubli_rx60l_link7" link2="bh_finger_32_link" reason="Never" />
     <disable_collisions link1="staubli_rx60l_link7" link2="wrist_load_cell" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_1/dist_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_1/med_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_1/prox_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_2/dist_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_2/prox_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wam/bhand/finger_3/med_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/bhand_palm_link" link2="wrist_load_cell" reason="Default" />
-    <disable_collisions link1="wam/bhand/finger_1/dist_link" link2="wam/bhand/finger_1/med_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/finger_1/dist_link" link2="wam/bhand/finger_1/prox_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/dist_link" link2="wam/bhand/finger_2/prox_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/dist_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/med_link" link2="wam/bhand/finger_1/prox_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/finger_1/med_link" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/med_link" link2="wam/bhand/finger_2/prox_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/med_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/prox_link" link2="wam/bhand/finger_2/dist_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/prox_link" link2="wam/bhand/finger_2/med_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/prox_link" link2="wam/bhand/finger_2/prox_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/prox_link" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/prox_link" link2="wam/bhand/finger_3/med_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_1/prox_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_2/dist_link" link2="wam/bhand/finger_2/med_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/finger_2/dist_link" link2="wam/bhand/finger_2/prox_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_2/dist_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_2/med_link" link2="wam/bhand/finger_2/prox_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/finger_2/med_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_2/prox_link" link2="wam/bhand/finger_3/dist_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_2/prox_link" link2="wam/bhand/finger_3/med_link" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_2/prox_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_3/dist_link" link2="wam/bhand/finger_3/med_link" reason="Adjacent" />
-    <disable_collisions link1="wam/bhand/finger_3/dist_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="wam/bhand/finger_3/med_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_13_link" reason="Never" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_12_link" reason="Never" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_11_link" reason="Adjacent" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_23_link" reason="Never" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_21_link" reason="Adjacent" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="bh_base_link" link2="bh_finger_32_link" reason="Adjacent" />
+    <disable_collisions link1="bh_base_link" link2="wrist_load_cell" reason="Default" />
+    <disable_collisions link1="bh_finger_13_link" link2="bh_finger_12_link" reason="Adjacent" />
+    <disable_collisions link1="bh_finger_13_link" link2="bh_finger_11_link" reason="Never" />
+    <disable_collisions link1="bh_finger_13_link" link2="bh_finger_21_link" reason="Never" />
+    <disable_collisions link1="bh_finger_13_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_12_link" link2="bh_finger_11_link" reason="Adjacent" />
+    <disable_collisions link1="bh_finger_12_link" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="bh_finger_12_link" link2="bh_finger_21_link" reason="Never" />
+    <disable_collisions link1="bh_finger_12_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_11_link" link2="bh_finger_23_link" reason="Never" />
+    <disable_collisions link1="bh_finger_11_link" link2="bh_finger_22_link" reason="Never" />
+    <disable_collisions link1="bh_finger_11_link" link2="bh_finger_21_link" reason="Never" />
+    <disable_collisions link1="bh_finger_11_link" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="bh_finger_11_link" link2="bh_finger_32_link" reason="Never" />
+    <disable_collisions link1="bh_finger_11_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_23_link" link2="bh_finger_22_link" reason="Adjacent" />
+    <disable_collisions link1="bh_finger_23_link" link2="bh_finger_21_link" reason="Never" />
+    <disable_collisions link1="bh_finger_23_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_22_link" link2="bh_finger_21_link" reason="Adjacent" />
+    <disable_collisions link1="bh_finger_22_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_21_link" link2="bh_finger_33_link" reason="Never" />
+    <disable_collisions link1="bh_finger_21_link" link2="bh_finger_32_link" reason="Never" />
+    <disable_collisions link1="bh_finger_21_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_33_link" link2="bh_finger_32_link" reason="Adjacent" />
+    <disable_collisions link1="bh_finger_33_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_32_link" link2="wrist_load_cell" reason="Never" />
+    <disable_collisions link1="bh_finger_32_link" link2="bh_finger_31_link" reason="Never" />
+    <disable_collisions link1="barrett_mount_link" link2="bh_finger_31_link" reason="Never" />
+    
 </robot>
