@@ -34,21 +34,21 @@
     </group_state>
 
     <group_state name="presmack" group="StaubliArm">
-      <joint name="joint_1" value="0.7882955047635283" />
-      <joint name="joint_2" value="-0.9922980054572431" />
-      <joint name="joint_3" value="-1.6746369495361333" />
-      <joint name="joint_4" value="1.7578522034949733" />
-      <joint name="joint_5" value="1.5888157434434909" />
-      <joint name="joint_6" value="0.7345940443612643" />
+      <joint name="joint_1" value="0.8677783174990157" />
+      <joint name="joint_2" value="-0.6279648144505635" />
+      <joint name="joint_3" value="-1.8938146652397458" />
+      <joint name="joint_4" value="1.768221399535392" />
+      <joint name="joint_5" value="1.6002746609496237" />
+      <joint name="joint_6" value="0.4645434909357887" />
     </group_state>
 
     <group_state name="postsmack" group="StaubliArm">
       <joint name="joint_1" value="0.5167048198606308" />
-      <joint name="joint_2" value="-0.9922980054572431" />
-      <joint name="joint_3" value="-1.6746369495361333" />
-      <joint name="joint_4" value="1.7578522034949733" />
-      <joint name="joint_5" value="1.5888157434434909" />
-      <joint name="joint_6" value="0.7345940443612643" />
+      <joint name="joint_2" value="-0.6279648144505635" />
+      <joint name="joint_3" value="-1.8938146652397458" />
+      <joint name="joint_4" value="1.768221399535392" />
+      <joint name="joint_5" value="1.6002746609496237" />
+      <joint name="joint_6" value="0.4645434909357887" />
     </group_state>
     
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
