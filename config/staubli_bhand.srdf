@@ -50,6 +50,17 @@
       <joint name="joint_5" value="1.6002746609496237" />
       <joint name="joint_6" value="0.4645434909357887" />
     </group_state>
+
+    <group_state name="slight_spread" group="BarrettHand">
+      <joint name="bh_j11_joint" value="2.78" /> <!-- Spread -->
+      <joint name="bh_j12_joint" value="0.0" /> <!-- Finger 1 Proximal -->
+      <joint name="bh_j13_joint" value="0.0" /> <!-- Finger 1 Distal -->
+      <joint name="bh_j21_joint" value="2.78" /> <!-- Spread -->
+      <joint name="bh_j22_joint" value="0.0" /> <!-- Finger 2 Proximal -->
+      <joint name="bh_j23_joint" value="0.0" /> <!-- Finger 2 Distal -->
+      <joint name="bh_j32_joint" value="0.0" /> <!-- Finger 3 Proximal -->
+      <joint name="bh_j33_joint" value="0.0" /> <!-- Finger 3 Distal -->
+    </group_state>
     
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="BarrettHandEE" parent_link="staubli_rx60l_link7" group="BarrettHand" parent_group="StaubliArm" />
