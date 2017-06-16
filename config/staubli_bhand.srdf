@@ -33,7 +33,7 @@
       <joint name="joint_6" value="0" />
     </group_state>
 
-    <group_state name="presmack" group="StaubliArm">
+<!--     <group_state name="presmack" group="StaubliArm">
       <joint name="joint_1" value="0.8677783174990157" />
       <joint name="joint_2" value="-0.6279648144505635" />
       <joint name="joint_3" value="-1.8938146652397458" />
@@ -49,13 +49,53 @@
       <joint name="joint_4" value="1.768221399535392" />
       <joint name="joint_5" value="1.6002746609496237" />
       <joint name="joint_6" value="0.4645434909357887" />
+    </group_state> -->
+
+    <group_state name="presmack" group="StaubliArm">
+      <joint name="joint_1" value="0.8677783174990157" />
+      <joint name="joint_2" value="-0.8060459233836393" />
+      <joint name="joint_3" value="-1.8937222957615758" />
+      <joint name="joint_4" value="1.775762382240382" />
+      <joint name="joint_5" value="1.5959506879282834" />
+      <joint name="joint_6" value="0.7435334913161438" />
     </group_state>
 
+    <group_state name="postsmack" group="StaubliArm">
+      <joint name="joint_1" value="0.5167048198606308" />
+      <joint name="joint_2" value="-0.8060459233836393" />
+      <joint name="joint_3" value="-1.8937222957615758" />
+      <joint name="joint_4" value="1.775762382240382" />
+      <joint name="joint_5" value="1.5959506879282834" />
+      <joint name="joint_6" value="0.7435334913161438" />
+    </group_state>
+
+    <!-- <group_state name="slight_spread" group="BarrettHand"> -->
+    <!--   <joint name="bh_j11_joint" value="2.78" /> <!-- Spread -->
+    <!--   <joint name="bh_j12_joint" value="0.0" /> <!-- Finger 1 Proximal -->
+    <!--   <joint name="bh_j13_joint" value="0.0" /> <!-- Finger 1 Distal -->
+    <!--   <joint name="bh_j21_joint" value="2.78" /> <!-- Spread -->
+    <!--   <joint name="bh_j22_joint" value="0.0" /> <!-- Finger 2 Proximal -->
+    <!--   <joint name="bh_j23_joint" value="0.0" /> <!-- Finger 2 Distal -->
+    <!--   <joint name="bh_j32_joint" value="0.0" /> <!-- Finger 3 Proximal -->
+    <!--   <joint name="bh_j33_joint" value="0.0" /> <!-- Finger 3 Distal -->
+    <!-- </group_state> -->
+
     <group_state name="slight_spread" group="BarrettHand">
-      <joint name="bh_j11_joint" value="2.78" /> <!-- Spread -->
+      <joint name="bh_j11_joint" value="3.045" /> <!-- Spread -->
       <joint name="bh_j12_joint" value="0.0" /> <!-- Finger 1 Proximal -->
       <joint name="bh_j13_joint" value="0.0" /> <!-- Finger 1 Distal -->
-      <joint name="bh_j21_joint" value="2.78" /> <!-- Spread -->
+      <joint name="bh_j21_joint" value="3.045" /> <!-- Spread -->
+      <joint name="bh_j22_joint" value="0.0" /> <!-- Finger 2 Proximal -->
+      <joint name="bh_j23_joint" value="0.0" /> <!-- Finger 2 Distal -->
+      <joint name="bh_j32_joint" value="0.0" /> <!-- Finger 3 Proximal -->
+      <joint name="bh_j33_joint" value="0.0" /> <!-- Finger 3 Distal -->
+    </group_state>
+
+    <group_state name="three_together" group="BarrettHand">
+      <joint name="bh_j11_joint" value="3.14" /> <!-- Spread -->
+      <joint name="bh_j12_joint" value="0.0" /> <!-- Finger 1 Proximal -->
+      <joint name="bh_j13_joint" value="0.0" /> <!-- Finger 1 Distal -->
+      <joint name="bh_j21_joint" value="3.14" /> <!-- Spread -->
       <joint name="bh_j22_joint" value="0.0" /> <!-- Finger 2 Proximal -->
       <joint name="bh_j23_joint" value="0.0" /> <!-- Finger 2 Distal -->
       <joint name="bh_j32_joint" value="0.0" /> <!-- Finger 3 Proximal -->
@@ -63,10 +103,10 @@
     </group_state>
 
     <group_state name="feel_object" group="BarrettHand">
-      <joint name="bh_j11_joint" value="2.78" /> <!-- Spread -->
+      <joint name="bh_j11_joint" value="3.045" /> <!-- Spread -->
       <joint name="bh_j12_joint" value="1.0" /> <!-- Finger 1 Proximal -->
       <joint name="bh_j13_joint" value="0.0" /> <!-- Finger 1 Distal -->
-      <joint name="bh_j21_joint" value="2.78" /> <!-- Spread -->
+      <joint name="bh_j21_joint" value="3.045" /> <!-- Spread -->
       <joint name="bh_j22_joint" value="1.0" /> <!-- Finger 2 Proximal -->
       <joint name="bh_j23_joint" value="0.0" /> <!-- Finger 2 Distal -->
       <joint name="bh_j32_joint" value="1.0" /> <!-- Finger 3 Proximal -->
@@ -83,6 +123,8 @@
       <joint name="bh_j32_joint" value="0.0" /> <!-- Finger 3 Proximal -->
       <joint name="bh_j33_joint" value="0.0" /> <!-- Finger 3 Distal -->
     </group_state>
+
+
     
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="BarrettHandEE" parent_link="staubli_rx60l_link7" group="BarrettHand" parent_group="StaubliArm" />
