@@ -78,6 +78,24 @@
       <joint name="joint_6" value="0.7435334913161438" />
     </group_state>
 
+    <group_state name="prepick_position" group="StaubliArm">
+      <joint name="joint_1" value="0.10191331763781102" />
+      <joint name="joint_2" value="-0.4133945782377517" />
+      <joint name="joint_3" value="-1.396951600987485" />
+      <joint name="joint_4" value="-3.162836481854599" />
+      <joint name="joint_5" value="1.3431182110920605" />
+      <joint name="joint_6" value="2.833030260690407" />
+    </group_state>
+
+    <group_state name="postpick_position" group="StaubliArm">
+      <joint name="joint_1" value="0.10191331763781102" />
+      <joint name="joint_2" value="-0.27255673725647644" />
+      <joint name="joint_3" value="-1.4228733910853102" />
+      <joint name="joint_4" value="-3.15608228640496" />
+      <joint name="joint_5" value="1.4428651244494233" />
+      <joint name="joint_6" value="2.8250154114653427" />
+    </group_state>
+
     <!-- <group_state name="slight_spread" group="BarrettHand"> -->
     <!--   <joint name="bh_j11_joint" value="2.78" /> <!-- Spread -->
     <!--   <joint name="bh_j12_joint" value="0.0" /> <!-- Finger 1 Proximal -->
