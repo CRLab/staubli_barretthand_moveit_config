@@ -279,7 +279,6 @@
     <disable_collisions link1="bh_finger_33_link" link2="bh_finger_32_link" reason="Adjacent" />
     <disable_collisions link1="bh_finger_33_link" link2="wrist_load_cell" reason="Never" />
     <disable_collisions link1="bh_finger_32_link" link2="wrist_load_cell" reason="Never" />
-    <disable_collisions link1="bh_finger_32_link" link2="bh_finger_31_link" reason="Never" />
-    <disable_collisions link1="barrett_mount_link" link2="bh_finger_31_link" reason="Never" />
+
     
 </robot>
